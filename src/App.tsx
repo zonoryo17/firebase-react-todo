@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { FormControl, List, TextField } from "@material-ui/core";
 import styles from "./App.module.css";
-import { db } from "./firebase";
+import { FormControl, List, TextField } from "@material-ui/core";
 import AddToPhotosIcon from "@material-ui/icons/AddToPhotos";
-import TaskItem from "./TaskItem";
 import { makeStyles } from "@material-ui/styles";
-
-import { auth } from "./firebase";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import { db, auth } from "./firebase";
+import TaskItem from "./TaskItem";
 
 const useStyles = makeStyles({
   field: {
